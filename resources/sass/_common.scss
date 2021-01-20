@@ -1,0 +1,74 @@
+
+
+/*
+    h1=100%;
+    h2=75%;
+    h3=60%;
+    h4=50%;
+    h5=40%
+    h6=35%;
+*/
+
+$h1-size:5;
+
+:root{
+    --primary-color: red;
+    --secondary-color: blue;
+    --white-color: #FDFDFD;
+    --black-color: #232323;
+    --poppins: 'Poppins', sans-serif;
+    --h1-size: #{$h1-size + rem};
+    --h2-size: #{$h1-size / 100 * 75 + rem};
+    --h3-size: #{$h1-size / 100 * 60 + rem};
+    --h4-size: #{$h1-size / 100 * 50 + rem};
+    --h5-size: #{$h1-size / 100 * 40 + rem};
+    --h6-size: #{$h1-size / 100 * 35 + rem};
+}
+
+*,
+*:hover,
+*:focus,
+*:active{
+    outline: none !important;
+    text-decoration: none !important;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--poppins);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 700;
+}
+
+h1{
+    font-size: var(--h1-size);
+    font-weight: 800;
+}
+h2{
+    font-size: var(--h2-size);
+}
+h3{
+    font-size: var(--h3-size);
+}
+h4{
+    font-size: var(--h4-size);
+}
+h5{
+    font-size: var(--h5-size);
+}
+h6{
+    font-size: var(--h6-size);
+}
+
